@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Average Sans');
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    text-align: center;
+    font-family: Average Sans;
+    color: white;
+    background-image:url('images/background-image.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+h2{
+    display: none;
+}
+
+#main-wrapper {
+    max-width: 404px;
+    margin: 10% auto;
+}
+
+#game-content{
+    max-width: 364px;
+    margin: auto;
+}
+
+.box{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    border: 2px solid black;
+}
+
+#reset-button{
+    max-width: 80px;
+    height: 40px;
+    margin: 3% auto;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: dodgerblue;
+}
+
+#reset-button p{
+    vertical-align: middle;
+}
+
+/* javascript uses this */
+.effect{
+    background-position: center;
+    background-size: cover;
+    animation-name: special-effect;
+    animation-duration: 0.27s;
+}
+
+.heading{
+    z-index: 1000;
+    font-size: 100px;
+    background-color: firebrick;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+}
+
+@keyframes special-effect{
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(0.1);
+    }
+    20%{
+        transform: scale(0.2);
+    }
+    30%{
+        transform: scale(0.3);
+    }
+    40%{
+        transform: scale(0.4);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    60%{
+        transform: scale(0.6);
+    }
+    70%{
+        transform: scale(0.7);
+    }
+    80%{
+        transform: scale(0.8);
+    }
+    90%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* media queries (for responsive design)*/
+@media screen and (max-width: 350px){
+    .box{
+        width: 95px;
+    }
+    .heading{
+        font-size: 60px;
+    }
+}

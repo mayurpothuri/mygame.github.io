@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="tic-tac-toe game">
+        <meta name="keywords" content="tic,tac,toe,tic-tac-toe">
+        <meta name="author" content="Mayur Pothuri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/tic-tac-toe-game-icon.png">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section class="animated fadeInDownBig">
+                <div id="main-wrapper">
+                    <h1 style="font-size: 50px;padding: 5px;text-decoration: underline;">Tic-Tac-Toe</h1>
+                    <p style="font-size: 30px;">This is a two player game(both human only)</p>
+                    <div id="game-content">
+                        <div class="box" id="1" onclick="triggeredBox(1)">
+                        </div>
+                        <div class="box" id="2" onclick="triggeredBox(2)">
+                        </div>
+                        <div class="box" id="3" onclick="triggeredBox(3)">
+                        </div>
+                        <div class="box" id="4" onclick="triggeredBox(4)">
+                        </div>
+                        <h2 class="animated zoomIn"></h2>
+                        <div class="box" id="5" onclick="triggeredBox(5)">
+                        </div>
+                        <div class="box" id="6" onclick="triggeredBox(6)">
+                        </div>
+                        <div class="box" id="7" onclick="triggeredBox(7)">
+                        </div>
+                        <div class="box" id="8" onclick="triggeredBox(8)">
+                        </div>
+                        <div class="box" id="9" onclick="triggeredBox(9)">
+                        </div>
+                    </div>
+                    <div id="reset-button"><p>Reset</p></div>
+                    <p style="margin-top:20px; text-align:center;font-family:Allura;font-size:30px;padding-bottom: 20px;text-decoration: underline;">&hearts;Mayur Pothuri.</p>
+                </div>
+        </section>
+        <script src="myAction.js"></script>
+    </body>
+</html>
