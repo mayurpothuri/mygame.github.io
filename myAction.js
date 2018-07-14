@@ -26,6 +26,7 @@ function checkLines(a) {
     } else {
         result = 0;
     }
+    console.log(result);
     if(matrix[0][0] == result && matrix[0][1] == result && matrix[0][2] == result) {
         return true;
     } else if (matrix[0][0] == result && matrix[1][1] == result && matrix[2][2] == result) {
@@ -40,7 +41,10 @@ function checkLines(a) {
         return true;
     } else if (matrix[1][0] == result && matrix[1][1] == result && matrix[1][2] == result) {
         return true;
-    } 
+    }
+    else if(matrix[2][0] == result && matrix[1][1] == result && matrix[0][2] == result) {
+        return true;
+    }
     return false;
 }
 
@@ -94,6 +98,7 @@ function triggeredBox(a) {
             binary = -1;
         }
     }
+    console.log(matrix);
 }
 
 var button = document.getElementById("reset-button");
